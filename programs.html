@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1661,8 +1662,8 @@ p{padding: 0.9rem 0;}
 <div class="container">
 
 <nav class="nav-menu" id="navMenu">
-<a href="#home" class="nav-link">Home</a>
-<a href="#" class="nav-link">JE Gadgets </a>
+<a href="index.html" class="nav-link">Home</a>
+<a href="gadgets.html" class="nav-link">JE Gadgets </a>
 <a href="aboutUs.html" class="nav-link">About</a>
 <a href="programs.html" class="nav-link">Programs</a>
 <a href="contactUs.html" class="nav-link">Contact</a>
@@ -2408,6 +2409,74 @@ Instagram
 <!--<script src="main.js"></script>-->
 <!--<script src="programs.js"></script>-->
 <script>
+
+
+// Mobile Menu Toggle
+const mobileToggle = document.getElementById('mobileToggle');
+const navMenu = document.getElementById('navMenu');
+
+mobileToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Animate hamburger menu
+    const spans = mobileToggle.querySelectorAll('span');
+    spans.forEach((span, index) => {
+        if (navMenu.classList.contains('active')) {
+            if (index === 0) span.style.transform = 'rotate(45deg) translateY(7px)';
+            if (index === 1) span.style.opacity = '0';
+            if (index === 2) span.style.transform = 'rotate(-45deg) translateY(-7px)';
+        } else {
+            span.style.transform = '';
+            span.style.opacity = '';
+        }
+    });
+});
+
+// Close mobile menu when clicking on a link
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const spans = mobileToggle.querySelectorAll('span');
+        spans.forEach(span => {
+            span.style.transform = '';
+            span.style.opacity = '';
+        });
+    });
+});
+
+
+// Header Background on Scroll with enhanced effects
+function initHeaderScroll() {
+    const header = document.querySelector('.header');
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 50) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            header.style.backdropFilter = 'blur(20px)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+            header.style.backdropFilter = 'blur(10px)';
+        }
+        
+        // Hide/show header on scroll
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+}
+
+
+
 	// Slideshow functionality for program cards
 let currentSlides = {};
 
