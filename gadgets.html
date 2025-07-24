@@ -17,12 +17,12 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #1a1a1a;
-            background-color: grey;
+            background-color: whitesmoke;
         }
 
-        main {
+        /* main {
             margin-top: 157px;
-        }
+        } */
 
         .container {
             max-width: 1200px;
@@ -30,9 +30,57 @@
             padding: 0 1rem;
         }
 
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --primary: darkblue;
+    /* --primary: #2563eb; */
+    --secondary: #f59e0b;
+    --background: #ffffff;
+    --muted: #f8fafc;
+    --text-primary:black;
+    --text-secondary: black;
+    --border: #e2e8f0;
+    --card-bg: #ffffff;
+    --muted: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    /* --muted: 0 10px 15px -3px rgba(0, 0, 0, 0.1); */
+    --footer-bg: #1e3a8a;
+    --footer-text: #e2e8f0;
+    
+    /* Typography */
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
         /* Header Styles */
         .hero-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #052fef 0%, #da660853 100%);
             color: white;
             padding: 3rem 0;
             text-align: center;
@@ -81,7 +129,7 @@
 
         /* Main Content */
         .main-content {
-            padding: 3rem 0;
+            padding: 1.5rem 0;
         }
 
         /* Stats Section */
@@ -90,10 +138,12 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
+            margin-top: 3rem;
+
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #2402e6 70%, #f5576c 100%);
             color: white;
             padding: 2rem;
             border-radius: 12px;
@@ -133,14 +183,14 @@
         .gadget-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(20, 2, 183, 0.635);
             overflow: hidden;
             transition: all 0.3s ease;
         }
 
         .gadget-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(33, 4, 227, 0.74);
         }
 
         .gadget-image-container {
@@ -229,7 +279,7 @@
         .gadget-price {
             font-size: 1.75rem;
             font-weight: bold;
-            color: #3b82f6;
+            color: darkblue;
             margin-bottom: 1.5rem;
         }
 
@@ -261,12 +311,12 @@
         }
 
         .btn-buy {
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: darkblue;
             color: white;
         }
 
         .btn-buy:hover {
-            background: linear-gradient(135deg, #059669, #047857);
+            background: orangered;
             transform: translateY(-2px);
         }
 
@@ -308,7 +358,7 @@
 
         /* Contact Section */
         .contact-section {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, darkblue 80%, #f5576c86 100%);
             border-radius: 12px;
             padding: 3rem 2rem;
             text-align: center;
@@ -469,18 +519,18 @@
 
 
         /* Header */
-        .header {
+        /* .header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.95);
-            /* backdrop-filter: blur(20px); */
+            backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
             z-index: 1000;
             padding: var(--spacing-sm) 0;
             transition: var(--transition);
-        }
+        } */
 
         .header {
             display: grid;
@@ -497,10 +547,9 @@
         }
 
         .nav-brand {
-            margin: auto;
-            width: 50%;
-            align-content: center;
-            justify-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .nav-menu {
@@ -509,7 +558,7 @@
         }
 
         .nav-link {
-            color: var(--text-primary);
+            color: darkblue;
             text-decoration: none;
             font-weight: 500;
             transition: var(--transition);
@@ -551,6 +600,7 @@
         .contact-buttons {
             background: #000;
         }
+
     </style>
 </head>
 
@@ -565,9 +615,9 @@
 
             <nav class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link">JE-Tech-Hub </a>
-                <a href="aboutUs.html" class="nav-link">About</a>
+                <a href="aboutUs.html" class="nav-link">About Us</a>
                 <a href="programs.html" class="nav-link">Programs</a>
-                <a href="contactUs.html" class="nav-link">Contact</a>
+                <a href="contactUs.html" class="nav-link">Contact Us</a>
             </nav>
             <button class="contact-btn"><a href="getStarted.html">Get Started</a></button>
             <button class="mobile-toggle" id="mobileToggle">
@@ -599,9 +649,7 @@
                         laptops,
                         we have everything you need to stay connected and productive.
                     </p>
-                    <input type="text" placeholder="Search gadgets..." oninput="searchGadgets(this.value)"
-                        style="width:100%;padding:0.75rem;border-radius:8px;border:1px solid #ccc;margin-bottom:2rem;">
-
+                  
                 </div>
             </div>
         </header>
@@ -635,8 +683,13 @@
                         <button onclick="filterByCategory('Accessories')" class="btn">Accessories</button>
 
                     </div>
-            </section>
 
+                   
+
+            </section>
+   <input type="text" placeholder="Search gadgets..." oninput="searchGadgets(this.value)"
+                        style="width:100%;padding:0.75rem;border-radius:8px;border:none;border-bottom:3px solid rgb(44, 3, 247);margin-top:2rem ;margin-bottom: 2rem;
+                        outline: none; background: rgba(0, 21, 255, 0.037); color: whitesmoke;">
             <!-- Gadgets Grid -->
             <section class="gadgets-section">
                 <div class="gadgets-grid" id="gadgets-container">
@@ -690,6 +743,36 @@ Call Now
     </footer>
 
     <script>
+
+
+// Header Background on Scroll with enhanced effects
+function initHeaderScroll() {
+    const header = document.querySelector('.header');
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 50) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            header.style.backdropFilter = 'blur(20px)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+            header.style.backdropFilter = 'blur(10px)';
+        }
+        
+        // Hide/show header on scroll
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+}
 
         const gadgets = [
             {
