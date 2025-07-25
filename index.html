@@ -361,6 +361,9 @@ align-items: center;
 display: grid;
 align-content: center;
 justify-items: center;
+img{
+scale: .8;
+}
 }
 
 .nav-menu {
@@ -368,6 +371,7 @@ display: flex;
 gap: var(--spacing-sm);
 flex-wrap: wrap;
 justify-content: center;
+
 }
 
 .nav-link {
@@ -376,10 +380,16 @@ text-decoration: none;
 font-weight: 500;
 transition: var(--transition);
 position: relative;
+padding-inline: var(--spacing-md);
+border-bottom:3px solid darkblue ;
+border-radius: 5px;
 }
+
 
 .nav-link:hover {
 color: var(--primary);
+scale: 1.3;
+border: none;
 }
 
 .nav-link::after {
@@ -1447,36 +1457,36 @@ position: relative;
 <div class="carousel-container">
 <div class="carousel-slides" id="carouselSlides">
 <div class="slide active"
-    style="background-image: url('https://www.shutterstock.com/image-photo/young-african-male-programmer-writing-600nw-1233182206.jpg')">
-    <div class="slide-content">
-        <h1>LEARN, GROW <span>&amp;</span> EXPLORE ENDLESS <span>OPPORTUNITIES!</span></h1>
-        <p>
-            Join thousands of satisfied clients who have achieved their goals with our expert
-            guidance.
+style="background-image: url('https://www.shutterstock.com/image-photo/young-african-male-programmer-writing-600nw-1233182206.jpg')">
+<div class="slide-content">
+<h1>LEARN, GROW <span>&amp;</span> EXPLORE ENDLESS <span>OPPORTUNITIES!</span></h1>
+<p>
+Join thousands of satisfied clients who have achieved their goals with our expert
+guidance.
 
-        </p>
-        <button class="btn-primary"><a href="getStarted.html">Get Started</a></button>
-    </div>
+</p>
+<button class="btn-primary"><a href="getStarted.html">Get Started</a></button>
+</div>
 </div>
 <div class="slide"
-    style="background-image: url('https://peopleofcolorintech.com/wp-content/uploads/2021/09/lagos-techie-IgUR1iX0mqM-unsplash-1080x635.jpg');">
-    <div class="slide-content">
-        <h1>We Provide <span>Services</span> That You Can <span>Trust!</span></h1>
-        <p>Dedicated to empowering individuals and businesses with cutting-edge solutions.
-        </p>
+style="background-image: url('https://peopleofcolorintech.com/wp-content/uploads/2021/09/lagos-techie-IgUR1iX0mqM-unsplash-1080x635.jpg');">
+<div class="slide-content">
+<h1>We Provide <span>Services</span> That You Can <span>Trust!</span></h1>
+<p>Dedicated to empowering individuals and businesses with cutting-edge solutions.
+</p>
 
-        <button class="btn-primary"><a href="aboutUs.html#services">Our Services</a></button>
-    </div>
+<button class="btn-primary"><a href="aboutUs.html#services">Our Services</a></button>
+</div>
 </div>
 <div class="slide"
-    style="background-image:url('https://www.brookings.edu/wp-content/uploads/2022/11/shutterstock_2136404171_small.jpg');">
-    <div class="slide-content">
-        <h1>Excellence in Every Detail
-        </h1>
-        <p>Get the <span>skills</span>, mentorship, and resources you need to thrive <span>in
-                today's digital world.</span></p>
-        <button class="btn-primary"><a href="getStarted.html">Join Now </a></button>
-    </div>
+style="background-image:url('https://www.brookings.edu/wp-content/uploads/2022/11/shutterstock_2136404171_small.jpg');">
+<div class="slide-content">
+<h1>Excellence in Every Detail
+</h1>
+<p>Get the <span>skills</span>, mentorship, and resources you need to thrive <span>in
+today's digital world.</span></p>
+<button class="btn-primary"><a href="getStarted.html">Join Now </a></button>
+</div>
 </div>
 </div>
 <button class="carousel-btn prev" id="prevBtn">‹</button>
@@ -1491,7 +1501,7 @@ position: relative;
 <!-- Header -->
 <header class="header">
 <div class="nav-brand">
-<img src="images/JE Techhub logo.png" max-width="50%" height="100px" alt="je-tech-hub logo">
+<img src="images/updatedLogo.jpg" max-width="50%" height="100px" alt="je-tech-hub logo">
 </div>
 <div class="container">
 
@@ -1517,48 +1527,48 @@ position: relative;
 <div class="container">
 <div class="grid-2">
 <div class="card">
-    <div class="card-content">
-        <div class="icon-wrapper mission-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
-                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-                <path d="M12 2v2" />
-                <path d="M12 20v2" />
-                <path d="m4.93 4.93 1.41 1.41" />
-                <path d="m17.66 17.66 1.41 1.41" />
-                <path d="M2 12h2" />
-                <path d="M20 12h2" />
-                <path d="m6.34 17.66-1.41 1.41" />
-                <path d="m19.07 4.93-1.41 1.41" />
-            </svg>
-        </div>
-        <div class="card-text">
-            <h3>Our Mission</h3>
-            <p>To connect education and technology with innovative and practical tutoring that
-                enhances tech skills....</p>
-            <a href="aboutUs.html#mission" class="learn-more">LEARN MORE →</a>
-        </div>
-    </div>
+<div class="card-content">
+<div class="icon-wrapper mission-icon">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+<path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+<path d="M12 2v2" />
+<path d="M12 20v2" />
+<path d="m4.93 4.93 1.41 1.41" />
+<path d="m17.66 17.66 1.41 1.41" />
+<path d="M2 12h2" />
+<path d="M20 12h2" />
+<path d="m6.34 17.66-1.41 1.41" />
+<path d="m19.07 4.93-1.41 1.41" />
+</svg>
+</div>
+<div class="card-text">
+<h3>Our Mission</h3>
+<p>To connect education and technology with innovative and practical tutoring that
+enhances tech skills....</p>
+<a href="aboutUs.html#mission" class="learn-more">LEARN MORE →</a>
+</div>
+</div>
 </div>
 <div class="card">
-    <div class="card-content">
-        <div class="icon-wrapper vision-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14,2 14,8 20,8" />
-                <line x1="16" y1="13" x2="8" y2="13" />
-                <line x1="16" y1="17" x2="8" y2="17" />
-                <polyline points="10,9 9,9 8,9" />
-            </svg>
-        </div>
-        <div class="card-text">
-            <h3>Our Vision</h3>
-            <p>Shaping the future of tech—raising brilliant minds and crafting skilled...</p>
-            <a href="aboutUs.html#vision" class="learn-more">LEARN MORE →</a>
-        </div>
-    </div>
+<div class="card-content">
+<div class="icon-wrapper vision-icon">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+<polyline points="14,2 14,8 20,8" />
+<line x1="16" y1="13" x2="8" y2="13" />
+<line x1="16" y1="17" x2="8" y2="17" />
+<polyline points="10,9 9,9 8,9" />
+</svg>
+</div>
+<div class="card-text">
+<h3>Our Vision</h3>
+<p>Shaping the future of tech—raising brilliant minds and crafting skilled...</p>
+<a href="aboutUs.html#vision" class="learn-more">LEARN MORE →</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1569,49 +1579,49 @@ position: relative;
 <div class="container">
 <div class="grid-2">
 <div class="about-content">
-    <h2 class="borderdHeading">About Us</h2>
-    <p>JE Tech Hub, officially launched February 2024, marking a new phase of growth and innovation
-        to deliver top-tier tech solutions while empowering individuals and businesses with
-        industry-leading skills.
-    </p>
-    <p>
-        Having several training programs ongoing and approximately 30 graduates, we believe in
-        nurturing creativity, fostering growth, and equipping our community with practical skills to
-        thrive in the digital era.</p>
+<h2 class="borderdHeading">About Us</h2>
+<p>JE Tech Hub, officially launched February 2024, marking a new phase of growth and innovation
+to deliver top-tier tech solutions while empowering individuals and businesses with
+industry-leading skills.
+</p>
+<p>
+Having several training programs ongoing and approximately 30 graduates, we believe in
+nurturing creativity, fostering growth, and equipping our community with practical skills to
+thrive in the digital era.</p>
 
-    <div class="stats-grid">
-        <div class="stat-item">
-            <h3>500+</h3>
-            <p>Students Trained</p>
-        </div>
-        <div class="stat-item">
-            <h3>15+</h3>
-            <p>Expert Instructors</p>
-        </div>
-        <div class="stat-item">
-            <h3>95%</h3>
-            <p>Job Placement Rate</p>
-        </div>
-        <div class="stat-item">
-            <h3>50+</h3>
-            <p>Partner Companies</p>
-        </div>
-    </div>
-    <div class="action-buttons">
-        <button class="btn-primary"><a href="aboutUs.html">Learn More</a></button>
+<div class="stats-grid">
+<div class="stat-item">
+<h3>500+</h3>
+<p>Students Trained</p>
+</div>
+<div class="stat-item">
+<h3>15+</h3>
+<p>Expert Instructors</p>
+</div>
+<div class="stat-item">
+<h3>95%</h3>
+<p>Job Placement Rate</p>
+</div>
+<div class="stat-item">
+<h3>50+</h3>
+<p>Partner Companies</p>
+</div>
+</div>
+<div class="action-buttons">
+<button class="btn-primary"><a href="aboutUs.html">Learn More</a></button>
 
 
-    </div>
+</div>
 
 </div>
 <div class="about-image">
-    <img src="https://www.cio.com/wp-content/uploads/2025/04/304911-0-96969100-1744090469-shutterstock_2304727595.jpg?quality=50&strip=all&w=1024"
-        alt="JE Tech Hub Team">
+<img src="https://www.cio.com/wp-content/uploads/2025/04/304911-0-96969100-1744090469-shutterstock_2304727595.jpg?quality=50&strip=all&w=1024"
+alt="JE Tech Hub Team">
 
-    <div class="action-buttons-2">
-        <button class="btn-primary"><a href="aboutUs.html">Learn More</a></button>
-        <button class="btn-primary"><a href="aboutUs.html#services">Our Tech Services</a></button>
-    </div>
+<div class="action-buttons-2">
+<button class="btn-primary"><a href="aboutUs.html">Learn More</a></button>
+<button class="btn-primary"><a href="aboutUs.html#services">Our Tech Services</a></button>
+</div>
 </div>
 </div>
 </div>
@@ -1638,16 +1648,16 @@ padding-inline:var(--spacing-1xl) ;
 @media (width <=768px) {
 .offer {
 
-    display: block;
+display: block;
 
 }
 }
 
 @media (width > 768px) {
 .offer {
-    display: flex;
-    padding-inline: var(--spacing-2xl);
-    gap: 2rem;
+display: flex;
+padding-inline: var(--spacing-2xl);
+gap: 2rem;
 }
 }
 </style>
@@ -1658,10 +1668,10 @@ padding-inline:var(--spacing-1xl) ;
 <div class="left">
 <p>
 
-    Operating under the umbrella of JE Gadgets, our parent brand, which specializes in gadget sales,
-    repairs, and swaps. We offer a wide range of mobile devices, accessories and tech essentials at
-    unbeatable prices.
-    <br>
+Operating under the umbrella of JE Gadgets, our parent brand, which specializes in gadget sales,
+repairs, and swaps. We offer a wide range of mobile devices, accessories and tech essentials at
+unbeatable prices.
+<br>
 </p>
 <!-- <span class="action-buttons">
 <button class="btn-primary">JE-Gadgets</button>
@@ -1671,10 +1681,10 @@ padding-inline:var(--spacing-1xl) ;
 
 <div class="right">
 <p>
-    Whether you're an entrepreneur looking to scale, a tech enthusiast eager to explore new
-    frontiers, or someone seeking to upskill, we offer the knowledge, tools, and mentorship to help
-    you thrive in the ever-evolving digital landscape.
-    <br>
+Whether you're an entrepreneur looking to scale, a tech enthusiast eager to explore new
+frontiers, or someone seeking to upskill, we offer the knowledge, tools, and mentorship to help
+you thrive in the ever-evolving digital landscape.
+<br>
 </p>
 </div>
 
@@ -1685,7 +1695,7 @@ padding-inline:var(--spacing-1xl) ;
 .action-buttons-1 {
 display: flex;
 justify-self:
-    center;
+center;
 }
 </style>
 <span class="action-buttons-1">
@@ -1698,171 +1708,171 @@ justify-self:
 <h3 class="borderdHeading">Our Cutting-Edge Programs
 </h3>
 <p>We provide practical experience and expert guidance across various tech-driven fields with
-    several ongoing training programs to empower you with the skills you need to excel.</p>
+several ongoing training programs to empower you with the skills you need to excel.</p>
 <p>
-    Check Out Our advanced IT training, software development courses and more
+Check Out Our advanced IT training, software development courses and more
 </p>
 
 <span class="orangeHeading">
 
-    #Training Courses:
+#Training Courses:
 </span>
 </div>
 
 <div class="programs-grid">
 <div class="program-card" data-program="software-dev">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/software-dev.jpg" alt="Software Development"
-                class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400"
-                alt="Coding" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400"
-                alt="Programming" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">Software Development</h3>
-        <p>Learn to build responsive and dynamic websites using modern technologies like HTML, CSS,
-            JavaScript, and frameworks. Whether you want to create personal blogs, business
-            websites, or complex web applications, our courses will equip you with the skills to
-            succeed in the tech industry.</p>
-        <button class="btn-primary"><a href="programs.html#webdev">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/software-dev.jpg" alt="Software Development"
+class="program-slide active">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400"
+alt="Coding" class="program-slide">
+<img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400"
+alt="Programming" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">Software Development</h3>
+<p>Learn to build responsive and dynamic websites using modern technologies like HTML, CSS,
+JavaScript, and frameworks. Whether you want to create personal blogs, business
+websites, or complex web applications, our courses will equip you with the skills to
+succeed in the tech industry.</p>
+<button class="btn-primary"><a href="programs.html#webdev">Learn More</a></button>
+</div>
 </div>
 
 <div class="program-card" data-program="data-analysis">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/data-analysis.jpg" alt="Data Analysis"
-                class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400"
-                alt="Data Visualization" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400"
-                alt="Analytics" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">Data Analysis</h3>
-        <p>Master data science, analytics, and visualization tools to make data-driven decisions in
-            any industry.
-            Turn data into insights. Learn how to use tools like Excel, Python, SQL, and Power BI to
-            analyze and visualize data, helping businesses and organizations optimize their
-            performance.
-        </p>
-        <button class="btn-primary"><a href="programs.html#dataAnalysis">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/data-analysis.jpg" alt="Data Analysis"
+class="program-slide active">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400"
+alt="Data Visualization" class="program-slide">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400"
+alt="Analytics" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">Data Analysis</h3>
+<p>Master data science, analytics, and visualization tools to make data-driven decisions in
+any industry.
+Turn data into insights. Learn how to use tools like Excel, Python, SQL, and Power BI to
+analyze and visualize data, helping businesses and organizations optimize their
+performance.
+</p>
+<button class="btn-primary"><a href="programs.html#dataAnalysis">Learn More</a></button>
+</div>
 </div>
 
 <div class="program-card" data-program="uiux-design">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/uiux-design.jpg" alt="UI/UX Design" class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400"
-                alt="Design Process" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400"
-                alt="User Experience" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">UI/UX Design</h3>
-        <p>Master the art of creating user-friendly and visually appealing interfaces. Learn the
-            principles of user experience (UX) and user interface (UI) design using tools like Figma
-            and Adobe XD to craft intuitive and engaging digital experiences.</p>
-        <button class="btn-primary"><a href="programs.html#UI/UX">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/uiux-design.jpg" alt="UI/UX Design" class="program-slide active">
+<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400"
+alt="Design Process" class="program-slide">
+<img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400"
+alt="User Experience" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">UI/UX Design</h3>
+<p>Master the art of creating user-friendly and visually appealing interfaces. Learn the
+principles of user experience (UX) and user interface (UI) design using tools like Figma
+and Adobe XD to craft intuitive and engaging digital experiences.</p>
+<button class="btn-primary"><a href="programs.html#UI/UX">Learn More</a></button>
+</div>
 </div>
 
 <div class="program-card" data-program="graphics-design">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/graphics-design.jpg" alt="Graphics Design"
-                class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400"
-                alt="Creative Design" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=400"
-                alt="Digital Art" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">Graphics Design</h3>
-        <p>Unleash your creativity by mastering both video editing and graphic design. Learn to
-            transform raw footage into professional-quality videos using industry-standard software
-            like Adobe Premiere Pro and DaVinci Resolve. At the same time, develop skills in graphic
-            design with tools like Photoshop, Illustrator, and Canva..</p>
-        <button class="btn-primary"><a href="programs.html#graphics">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/graphics-design.jpg" alt="Graphics Design"
+class="program-slide active">
+<img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400"
+alt="Creative Design" class="program-slide">
+<img src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=400"
+alt="Digital Art" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">Graphics Design</h3>
+<p>Unleash your creativity by mastering both video editing and graphic design. Learn to
+transform raw footage into professional-quality videos using industry-standard software
+like Adobe Premiere Pro and DaVinci Resolve. At the same time, develop skills in graphic
+design with tools like Photoshop, Illustrator, and Canva..</p>
+<button class="btn-primary"><a href="programs.html#graphics">Learn More</a></button>
+</div>
 </div>
 
 <div class="program-card" data-program="forex-trading">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/forex-trading.jpg" alt="Forex Trading"
-                class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400"
-                alt="Trading Charts" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400"
-                alt="Financial Markets" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">Digital Marketing</h3>
-        <p> looking to earn more or build a career online? <br> &mdash;Learn digital marketing — the
-            #1 skill for today’s world. Start building your future now while others are still
-            scrolling, even with just your phone. No tech experience needed. </p>
-        <button class="btn-primary"><a href="programs.html/#Marketing">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/forex-trading.jpg" alt="Forex Trading"
+class="program-slide active">
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400"
+alt="Trading Charts" class="program-slide">
+<img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400"
+alt="Financial Markets" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">Digital Marketing</h3>
+<p> looking to earn more or build a career online? <br> &mdash;Learn digital marketing — the
+#1 skill for today’s world. Start building your future now while others are still
+scrolling, even with just your phone. No tech experience needed. </p>
+<button class="btn-primary"><a href="programs.html/#Marketing">Learn More</a></button>
+</div>
 </div>
 
 <div class="program-card" data-program="gadget-repair">
-    <div class="program-image-slideshow">
-        <div class="program-slides">
-            <img src="src/assets/gadget-repair.jpg" alt="Gadget Repair"
-                class="program-slide active">
-            <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=400"
-                alt="Phone Repair" class="program-slide">
-            <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400"
-                alt="Electronics" class="program-slide">
-        </div>
-        <div class="program-indicators">
-            <span class="program-indicator active"></span>
-            <span class="program-indicator"></span>
-            <span class="program-indicator"></span>
-        </div>
-    </div>
-    <div class="program-content">
-        <h3 class="orangeHeading">Gadget Repair</h3>
-        <p>Top-Quality Gadgets, or reliable repair services? We offer a wide range of mobile
-            devices, accessories and tech essentials at unbeatable prices. Whether you need a
-            brand-new, high-performance gadget or expert repairs for your damaged device, we are
-            ready to assist.</p>
-        <button class="btn-primary"><a href="#">Learn More</a></button>
-    </div>
+<div class="program-image-slideshow">
+<div class="program-slides">
+<img src="src/assets/gadget-repair.jpg" alt="Gadget Repair"
+class="program-slide active">
+<img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=400"
+alt="Phone Repair" class="program-slide">
+<img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400"
+alt="Electronics" class="program-slide">
+</div>
+<div class="program-indicators">
+<span class="program-indicator active"></span>
+<span class="program-indicator"></span>
+<span class="program-indicator"></span>
+</div>
+</div>
+<div class="program-content">
+<h3 class="orangeHeading">Gadget Repair</h3>
+<p>Top-Quality Gadgets, or reliable repair services? We offer a wide range of mobile
+devices, accessories and tech essentials at unbeatable prices. Whether you need a
+brand-new, high-performance gadget or expert repairs for your damaged device, we are
+ready to assist.</p>
+<button class="btn-primary"><a href="#">Learn More</a></button>
+</div>
 </div>
 </div>
 
@@ -1871,15 +1881,15 @@ justify-self:
 
 </h3>
 <p>Whether you're interested in web development, graphic design, data analysis, or other innovative
-    sectors, our tailored courses equip you with the skills needed to excel in today's fast-paced
-    digital landscape.
+sectors, our tailored courses equip you with the skills needed to excel in today's fast-paced
+digital landscape.
 </p>
 <div style="background-color: darkblue; width: 80%; height: 2px; margin: auto;"
-    class="horizontalLine"></div>
+class="horizontalLine"></div>
 <p>
-    Join a community of like-minded learners and industry professionals who are passionate about
-    technology and personal growth. Get the skills, mentorship, and resources you need to thrive in
-    today's digital world..</p>
+Join a community of like-minded learners and industry professionals who are passionate about
+technology and personal growth. Get the skills, mentorship, and resources you need to thrive in
+today's digital world..</p>
 <button class="btn-primary"><a href="getStarted.html">Get Started</a></button>
 </div>
 </div>
@@ -1893,73 +1903,73 @@ justify-self:
 <div class="section-header" style="padding-inline: var(--spacing-3xl);">
 <p>We Also Offer reliable delivery services.</p>
 <p>Explore the world of logistics and deliveries. Learn how to start and operate a successful
-    delivery business, optimize routes, manage orders, and use digital tools to ensure fast and
-    efficient deliveries for e-commerce, food, and courier services.</p>
+delivery business, optimize routes, manage orders, and use digital tools to ensure fast and
+efficient deliveries for e-commerce, food, and courier services.</p>
 <p>Whether you are purchasing or whatever, we ensure that everything arrives at your doorstep or
-    your preferred location.</p>
+your preferred location.</p>
 </div>
 
 <div class="grid-2">
 <div class="services-list">
-    <h3 class="orangeHeading">Services Offered:</h3>
-    <div class="services-grid">
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
-                <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
-                <path d="M12 3v6" />
-            </svg>
-            <span>Door-To-Door Delivery</span>
-        </div>
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M2 3h6l1 2v13a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9" />
-                <path d="M8 21V7a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v14" />
-            </svg>
-            <span>Office Delivery</span>
-        </div>
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z" />
-                <path d="M6 1v3" />
-                <path d="M10 1v3" />
-                <path d="M14 1v3" />
-            </svg>
-            <span>Food Delivery</span>
-        </div>
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M7 17l9.2-9.2M17 17H7v-10" />
-            </svg>
-            <span>Motor Park Pickup</span>
-        </div>
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M7 7l9.2 9.2M17 7v10H7" />
-            </svg>
-            <span>Motor Park Dropoff</span>
-        </div>
-        <div class="service-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-            </svg>
-            <span>Mail Pockets</span>
-        </div>
-    </div>
-    <button class="btn-primary"><a href="contactUs.html">Contact Us</a></button>
+<h3 class="orangeHeading">Services Offered:</h3>
+<div class="services-grid">
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
+<path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
+<path d="M12 3v6" />
+</svg>
+<span>Door-To-Door Delivery</span>
+</div>
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M2 3h6l1 2v13a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9" />
+<path d="M8 21V7a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v14" />
+</svg>
+<span>Office Delivery</span>
+</div>
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+<path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z" />
+<path d="M6 1v3" />
+<path d="M10 1v3" />
+<path d="M14 1v3" />
+</svg>
+<span>Food Delivery</span>
+</div>
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M7 17l9.2-9.2M17 17H7v-10" />
+</svg>
+<span>Motor Park Pickup</span>
+</div>
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M7 7l9.2 9.2M17 7v10H7" />
+</svg>
+<span>Motor Park Dropoff</span>
+</div>
+<div class="service-item">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path
+d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+<polyline points="22,6 12,13 2,6" />
+</svg>
+<span>Mail Pockets</span>
+</div>
+</div>
+<button class="btn-primary"><a href="contactUs.html">Contact Us</a></button>
 </div>
 <div class="services-image">
-    <img src="https://je-tech-hub.github.io/fresh-web-craft/images/delivery-service-DIqfsVCx.jpg"
-        alt="Delivery Services">
+<img src="https://je-tech-hub.github.io/fresh-web-craft/images/delivery-service-DIqfsVCx.jpg"
+alt="Delivery Services">
 </div>
 </div>
 </div>
@@ -1984,39 +1994,39 @@ Hub. Hear what they have to say about their journey with us.</p>
 
 <div class="testimonials-grid">
 <div class="testimonial-card">
-    <div class="testimonial-content">
-        <p>"JE Tech Hub transformed my career. The hands-on training and expert instructors helped
-            me gain the skills I needed to land my first job in web development. The community and
-            support I received here were amazing!"</p>
-    </div>
-    <div class="testimonial-author">
-        <h4>Sarah Jones</h4>
-        <span class="date">22 Aug, 2023</span>
-    </div>
+<div class="testimonial-content">
+<p>"JE Tech Hub transformed my career. The hands-on training and expert instructors helped
+me gain the skills I needed to land my first job in web development. The community and
+support I received here were amazing!"</p>
+</div>
+<div class="testimonial-author">
+<h4>Sarah Jones</h4>
+<span class="date">22 Aug, 2023</span>
+</div>
 </div>
 
 <div class="testimonial-card">
-    <div class="testimonial-content">
-        <p>"I've been through several tech training programs, but none compared to the quality of JE
-            Tech Hub. The curriculum was up-to-date, and I learned everything I needed to start my
-            own freelance business in digital marketing. Highly recommend!"</p>
-    </div>
-    <div class="testimonial-author">
-        <h4>Michael Smith</h4>
-        <span class="date">15 Sept, 2023</span>
-    </div>
+<div class="testimonial-content">
+<p>"I've been through several tech training programs, but none compared to the quality of JE
+Tech Hub. The curriculum was up-to-date, and I learned everything I needed to start my
+own freelance business in digital marketing. Highly recommend!"</p>
+</div>
+<div class="testimonial-author">
+<h4>Michael Smith</h4>
+<span class="date">15 Sept, 2023</span>
+</div>
 </div>
 
 <div class="testimonial-card">
-    <div class="testimonial-content">
-        <p>"Thanks to JE Tech Hub's software development course, I now have the skills to build my
-            own applications. The instructors were not only experts but also genuinely caring, and
-            the practical training helped me grow fast!"</p>
-    </div>
-    <div class="testimonial-author">
-        <h4>Emma Watson</h4>
-        <span class="date">5 Jan, 2024</span>
-    </div>
+<div class="testimonial-content">
+<p>"Thanks to JE Tech Hub's software development course, I now have the skills to build my
+own applications. The instructors were not only experts but also genuinely caring, and
+the practical training helped me grow fast!"</p>
+</div>
+<div class="testimonial-author">
+<h4>Emma Watson</h4>
+<span class="date">5 Jan, 2024</span>
+</div>
 </div>
 </div>
 </div>
@@ -2032,52 +2042,52 @@ Hub. Hear what they have to say about their journey with us.</p>
 
 <div class="grid-2">
 <div class="contact-form-wrapper">
-    <form class="contact-form" id="contactForm">
-        <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
+<form class="contact-form" id="contactForm">
+<div class="form-group">
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName" name="fullName" required>
+</div>
 
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+</div>
 
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" required>
+</div>
 
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-        </div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" required>
+</div>
 
-        <div class="form-group">
-            <label for="message">Write Your Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+<div class="form-group">
+<label for="message">Write Your Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
 
-        <button type="submit" class="btn-primary">Submit Message</button>
-    </form>
+<button type="submit" class="btn-primary">Submit Message</button>
+</form>
 </div>
 
 <div class="contact-info">
-    <img src="https://je-tech-hub.github.io/fresh-web-craft/images/contact-support-BqxCtmjx.jpg"
-        alt="Contact Support">
-    <div class="contact-details">
-        <h3 class="orangeHeading">Get in Touch</h3>
-        <p>We're here to help and answer any question you might have.</p>
-        <div class="contact-item">
-            <strong>Email:</strong> info@jetechhub.com
-        </div>
-        <div class="contact-item">
-            <strong>Phone:</strong> +234 xxx xxx xxxx
-        </div>
-        <div class="contact-item">
-            <strong>Address:</strong> Abuja, Nigeria
-        </div>
-    </div>
+<img src="https://je-tech-hub.github.io/fresh-web-craft/images/contact-support-BqxCtmjx.jpg"
+alt="Contact Support">
+<div class="contact-details">
+<h3 class="orangeHeading">Get in Touch</h3>
+<p>We're here to help and answer any question you might have.</p>
+<div class="contact-item">
+<strong>Email:</strong> info@jetechhub.com
+</div>
+<div class="contact-item">
+<strong>Phone:</strong> +234 xxx xxx xxxx
+</div>
+<div class="contact-item">
+<strong>Address:</strong> Abuja, Nigeria
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2088,94 +2098,94 @@ Hub. Hear what they have to say about their journey with us.</p>
 <div class="container">
 <div class="footer-content">
 <div class="footer-section">
-    <h3>JE Tech Hub</h3>
-    <p>Empowering the next generation of tech innovators with cutting-edge training and real-world
-        experience.</p>
-    <div class="social-links">
-        <a href="#" class="social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-            </svg>
-        </a>
-        <a href="#" class="social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-            </svg>
-        </a>
-        <a href="#" class="social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-        </a>
-    </div>
+<h3>JE Tech Hub</h3>
+<p>Empowering the next generation of tech innovators with cutting-edge training and real-world
+experience.</p>
+<div class="social-links">
+<a href="#" class="social-link">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path
+d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+</svg>
+</a>
+<a href="#" class="social-link">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path
+d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+</svg>
+</a>
+<a href="#" class="social-link">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+<path
+d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+</svg>
+</a>
+</div>
 </div>
 
 <div class="footer-section">
-    <h4>Quick Links</h4>
-    <ul class="footer-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<h4>Quick Links</h4>
+<ul class="footer-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </div>
 
 <div class="footer-section">
-    <h4>Programs</h4>
-    <ul class="footer-links">
-        <li><a href="#">Software Development</a></li>
-        <li><a href="#">Data Analysis</a></li>
-        <li><a href="#">UI/UX Design</a></li>
-        <li><a href="#">Graphics Design</a></li>
-        <li><a href="#">Forex Trading</a></li>
-        <li><a href="#">Gadget Repair</a></li>
-    </ul>
+<h4>Programs</h4>
+<ul class="footer-links">
+<li><a href="#">Software Development</a></li>
+<li><a href="#">Data Analysis</a></li>
+<li><a href="#">UI/UX Design</a></li>
+<li><a href="#">Graphics Design</a></li>
+<li><a href="#">Forex Trading</a></li>
+<li><a href="#">Gadget Repair</a></li>
+</ul>
 </div>
 
 <div class="footer-section">
-    <h4>Contact Info</h4>
-    <div class="contact-info-footer">
-        <div class="footer-contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-            </svg>
-            <span>buja, Nigeria</span>
-        </div>
-        <div class="footer-contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            <span>+234 xxx xxx xxxx</span>
-        </div>
-        <div class="footer-contact-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
-                <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-            </svg>
-            <span>info@jetechhub.com</span>
-        </div>
-    </div>
+<h4>Contact Info</h4>
+<div class="contact-info-footer">
+<div class="footer-contact-item">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+<circle cx="12" cy="10" r="3" />
+</svg>
+<span>buja, Nigeria</span>
+</div>
+<div class="footer-contact-item">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path
+d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+</svg>
+<span>+234 xxx xxx xxxx</span>
+</div>
+<div class="footer-contact-item">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+stroke-width="2">
+<path
+d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+<polyline points="22,6 12,13 2,6" />
+</svg>
+<span>info@jetechhub.com</span>
+</div>
+</div>
 </div>
 </div>
 
 <div class="footer-bottom">
 <div class="footer-bottom-content">
-    <p>&copy; 2024 JE Tech Hub. All rights reserved.</p>
-    <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Cookie Policy</a>
-    </div>
+<p>&copy; 2024 JE Tech Hub. All rights reserved.</p>
+<div class="footer-bottom-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">Cookie Policy</a>
+</div>
 </div>
 </div>
 </div>
@@ -2335,18 +2345,18 @@ const slides = card.querySelectorAll('.program-slide');
 const indicators = card.querySelectorAll('.program-indicator');
 
 if (slides.length > 1) {
-    const slideshow = {
-        currentSlide: 0,
-        slides: slides,
-        indicators: indicators,
-        totalSlides: slides.length,
-        interval: null,
-        card: card
-    };
+const slideshow = {
+currentSlide: 0,
+slides: slides,
+indicators: indicators,
+totalSlides: slides.length,
+interval: null,
+card: card
+};
 
-    this.slideshows.set(cardIndex, slideshow);
-    this.bindEvents(slideshow, cardIndex);
-    this.startAutoSlide(slideshow);
+this.slideshows.set(cardIndex, slideshow);
+this.bindEvents(slideshow, cardIndex);
+this.startAutoSlide(slideshow);
 }
 });
 }
@@ -2355,7 +2365,7 @@ bindEvents(slideshow, cardIndex) {
 // Indicator clicks
 slideshow.indicators.forEach((indicator, index) => {
 indicator.addEventListener('click', () => {
-    this.goToSlide(slideshow, index);
+this.goToSlide(slideshow, index);
 });
 });
 
@@ -2438,8 +2448,8 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 for (let field of requiredFields) {
 if (!data[field] || data[field].trim() === '') {
-    this.showError(`Please fill in the ${field.replace(/([A-Z])/g, ' $1').toLowerCase()}`);
-    return false;
+this.showError(`Please fill in the ${field.replace(/([A-Z])/g, ' $1').toLowerCase()}`);
+return false;
 }
 }
 
@@ -2528,9 +2538,9 @@ document.body.appendChild(notification);
 setTimeout(() => {
 notification.style.animation = 'slideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
 setTimeout(() => {
-    if (notification.parentNode) {
-        notification.parentNode.removeChild(notification);
-    }
+if (notification.parentNode) {
+notification.parentNode.removeChild(notification);
+}
 }, 300);
 }, 5000);
 }
@@ -2548,13 +2558,13 @@ const targetId = link.getAttribute('href');
 const targetElement = document.querySelector(targetId);
 
 if (targetElement) {
-    const headerHeight = document.querySelector('.header').offsetHeight;
-    const targetPosition = targetElement.offsetTop - headerHeight;
+const headerHeight = document.querySelector('.header').offsetHeight;
+const targetPosition = targetElement.offsetTop - headerHeight;
 
-    window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-    });
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
 }
 });
 });
@@ -2570,27 +2580,27 @@ rootMargin: '0px 0px -50px 0px'
 const observer = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
 if (entry.isIntersecting) {
-    const element = entry.target;
+const element = entry.target;
 
-    // Add different animations based on element type
-    if (element.classList.contains('card')) {
-        element.classList.add('animate-fadeInScale');
-    } else if (element.classList.contains('program-card')) {
-        element.classList.add('animate-fadeInUp');
-    } else if (element.classList.contains('testimonial-card')) {
-        element.classList.add('animate-slideInLeft');
-    } else if (element.classList.contains('stat-item')) {
-        element.classList.add('animate-bounce');
-    } else {
-        element.classList.add('animate-fadeInUp');
-    }
+// Add different animations based on element type
+if (element.classList.contains('card')) {
+element.classList.add('animate-fadeInScale');
+} else if (element.classList.contains('program-card')) {
+element.classList.add('animate-fadeInUp');
+} else if (element.classList.contains('testimonial-card')) {
+element.classList.add('animate-slideInLeft');
+} else if (element.classList.contains('stat-item')) {
+element.classList.add('animate-bounce');
+} else {
+element.classList.add('animate-fadeInUp');
+}
 
-    // Set opacity and transform
-    element.style.opacity = '1';
-    element.style.transform = 'translateY(0)';
+// Set opacity and transform
+element.style.opacity = '1';
+element.style.transform = 'translateY(0)';
 
-    // Unobserve after animation
-    observer.unobserve(element);
+// Unobserve after animation
+observer.unobserve(element);
 }
 });
 }, observerOptions);
@@ -2668,8 +2678,8 @@ const increment = target / 100;
 const timer = setInterval(() => {
 current += increment;
 if (current >= target) {
-    current = target;
-    clearInterval(timer);
+current = target;
+clearInterval(timer);
 }
 counter.textContent = Math.floor(current) + suffix;
 }, 20);
@@ -2678,8 +2688,8 @@ counter.textContent = Math.floor(current) + suffix;
 const observer = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
 if (entry.isIntersecting) {
-    animateCounter(entry.target);
-    observer.unobserve(entry.target);
+animateCounter(entry.target);
+observer.unobserve(entry.target);
 }
 });
 });
@@ -2700,7 +2710,7 @@ document.body.classList.remove('loading');
 // Animate hero content
 const slideContent = document.querySelector('.slide.active .slide-content');
 if (slideContent) {
-    slideContent.style.animation = 'fadeInUp 1s ease-out';
+slideContent.style.animation = 'fadeInUp 1s ease-out';
 }
 }, 500);
 });
@@ -2742,8 +2752,8 @@ if (navMenu.classList.contains('active')) {
 navMenu.classList.remove('active');
 const spans = mobileToggle.querySelectorAll('span');
 spans.forEach(span => {
-    span.style.transform = '';
-    span.style.opacity = '';
+span.style.transform = '';
+span.style.opacity = '';
 });
 }
 }
